@@ -27,8 +27,8 @@ if page == "Add Member":
         st.session_state.library.register_member(new_member)
         st.rerun()
 
-elif page == "Manage Membership Cek Edit Push":
-    st.write("### Manage Membership")
+elif page == "Manage Membership":
+    st.write("### Manage Membership Cek Edit Push")
 
     for index, member in enumerate(st.session_state.library.members):
         status = "Active" if member.is_active else "Inactive"
